@@ -1,0 +1,28 @@
+{% extends '_base.html' %}
+{% block container %}
+
+<div class="flex-container"  id="login">
+    <div class="formulario">
+        <div class="item-formulario" id="cb-login">
+            <h2>Login da Área Administrativa</h2>
+            <p>Somente membros podem acessar</p>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <input type="email" name="email" placeholder="name@example.com" required autofocus />
+                    <label for="email">E-mail de acesso</label>
+                </div>
+                
+                <div>
+                    <input type="password" name="senha" required />
+                    <label for="phone">Senha de  Acesso</label>
+                </div>
+
+                <div class="btn-login" type="submit">Acessar</button></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
