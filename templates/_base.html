@@ -12,10 +12,10 @@
         <div class="flex-container menu">
         <div><h1>Minha Loja</h1></div>
             <ul class="list-itens">
-                <li><a href="/">Home</a></li>
-                <li><a href="/diferenciais">Diferenciais</a></li>
-                <li><a href="/produtos">Produtos</a></li>
-                <li><a href="/login">Login</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('diferenciais') }}">Diferenciais</a></li>
+                <li><a href="{{ url_for('produtos') }}">Produtos</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
             </ul>
         </div>    
     </header>
